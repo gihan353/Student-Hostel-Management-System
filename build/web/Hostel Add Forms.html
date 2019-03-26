@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hostel</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<div class="row">
+	<div class="col-sm-16">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hostel Managment System | Uva Wellassa University Sri Lanka </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="AllHomePage.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+      <li><a href="LoginHomePage.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  	</div>
+  <div class="col-sm-3">
+  <ul class="nav nav-pills nav-stacked">
+      
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-tag"></span> Add Hostel</a></li>
+      <li><a href="Inventory Add Forms.html"><span class="glyphicon glyphicon-info-sign"></span> Change Inventory Details</a></li>
+</ul>
+  </div>
+    <form  action="AddHostel.jsp" class="form-horizontal" method="POST">
+     <form action="/action_page.php" method="post">
+  <div class="col-sm-1">
+  	<div class="container col-sm-13" >
+  	<div class="jumbotron col-sm-10">
+	<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="hostelid">Hostel ID:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="hostelid" placeholder="Enter Hostel ID" required>
+    </div>
+  </div>
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="hostelname">Hostel Name:</label>
+    <div class="col-sm-3">
+<div >
+    <select class="form-control" name="hostelname" id="sel1">
+    <option>  Corel Beauty</option>
+    <option>  Silvertips</option>
+    <option>  Blue Sapphire</option>
+    <option>  Catteliya</option>
+    <option>  Samanala 1</option>
+    <option>  Samanala 2</option>
+    <option>  Mahaweli</option>
+    <option>  Sarwodaya</option>
+  </select>
+</div>
+</div>
+  </div>
+      <div class="form-group">
+    <label class="control-label col-sm-2" for="addline1">Hostel Address No :</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="addline1" placeholder="Enter Address No" required>
+    </div>
+  </div>
+      <div class="form-group">
+    <label class="control-label col-sm-2" for="addline2">Street:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="addline2" placeholder="Enter Street" required>
+    </div>
+  </div>
+        <div class="form-group">
+    <label class="control-label col-sm-2" for="addline3">Town:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="addline3" placeholder="Enter Town" required>
+    </div>
+  </div>
+          <div class="form-group">
+    <label class="control-label col-sm-2" for="userid">User ID:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="userid" placeholder="Enter User ID" required>
+    </div>
+  </div>
+        <div class="form-group">
+    <label class="control-label col-sm-2" for="date">Date:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="date" placeholder="DD/MM/YYYY" required>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+    </div>
+  </div>
+        
+        </form>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="reset" class="btn btn-warning">Reset</button>
+      <button type="submit" class="btn btn-danger">Delete</button>
+  </div>
+      </form>
+</form>
+  	</div>
+	</div>
+            <style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+	
+	
+	height:60px;
+}
+</style>
+
+<div class="footer">
+  <p></p>
+  <p></p>
+  <p>Copyright © 2017 - Uva Wellassa University</p>
+</div>
+
+  </div>
+
+</div>
+<body>
+</body>
+</html>
